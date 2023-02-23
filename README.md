@@ -26,4 +26,4 @@ To run the code with $\beta_s=0.85$, and a HMC update with two-step update whose
 We strongly suggest to run always the code with **#define START_X0_NULL** instead to **#define START_X0_PREVIOUS** to ensure detailed balance of the HMC algorithm.
 The lattice hamiltonian reads as follows
 
-$$ H = \sum_{x, y} \overbar{\psi}_x M_{x, y} \psi_y + \frac{N_f \beta_s}{4}\sum_{\widetilde{x}}\sigma^2_{\widetilde{x}}$$
+$$ H = \sum_{x, y} \bar{\psi}_x M_{x, y} \psi_y + \frac{N_f \beta_s}{4}\sum_{\widetilde{x}}\sigma^2_{\widetilde{x}}$$
