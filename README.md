@@ -19,10 +19,10 @@ When you run the code, 7 parameters are needed as input parameters
 9. int : step_pi -> number of steps of the HMC trajectory for the pi field
 10. int : seed -> random number seed
 
-For example, to run the GN_Z2_model with 0 mass, beta_scalar=0.85, 2 steps in the HMC and epsilon_sigma=0.2 (if **#define AUTOREGULATION** has been activated, note that this value will be changed) run
+To run the code with $\beta_s=0.85$, and a HMC update with two-step update whose length is **step_sigma=0.2** use 
 
 > ./GNModel 0.0 0.85 0.0 0.0 0.2 0.0 0 2 0 1231
 
 We strongly suggest to run always the code with **#define START_X0_NULL** instead to **#define START_X0_PREVIOUS** to ensure detailed balance of the HMC algorithm.
-The lattice hamiltonian and observables are discussed [here](pdf/Gross_Neveu_algorithm.pdf).
-The main parameters required for the simulation are collected in *macro.h*, and they are discussed [here](pdf/discussionmacro.md).
+The lattice hamiltonian reads as follows
+$$H = \sum_{x, y} \overbar{\psi}_x M_{x, y} \psi_y + \frac{N_f \beta_s}{4}\sum_{\widetilde{x}}\sigma^2_{\widetilde{x}}$$
