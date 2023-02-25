@@ -27,3 +27,7 @@ We strongly suggest to run always the code with **#define START_X0_NULL** instea
 The lattice hamiltonian reads as follows
 
 $$ H = \sum_{x, y} \bar{\psi}_x M_{x, y} \psi_y + \frac{N_f \beta_s}{4}\sum_{\widetilde{x}}\sigma^2_{\widetilde{x}}$$
+
+where the Dirac matrix $M_{x,y}$ is defined as follows
+
+$$M_{x,y}=\sum_{\mu=1}^3\frac{\eta_\mu(x)}{2}\[\delta_{y,x+\mu}-\delta_{y,x-\mu}\] + \frac{1}{8}\sum_{\langle x,\widetilde{x}\rangle}\sigma_{\widetilde{x}}$$
