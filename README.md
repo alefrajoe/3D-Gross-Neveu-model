@@ -1,6 +1,6 @@
 # Code for simulating the Z_2 Gross-Neveu model
 
-The code currently simulate the Z_2 globally invariant Gross-Neveu model in (2+1) dimensions.  
+The code simulates the Z_2 globally invariant Gross-Neveu model in (2+1) dimensions.  
 To compile the code on a local machine, execute the command
 
 > gcc -O3 *.c -o GNModel -lm
